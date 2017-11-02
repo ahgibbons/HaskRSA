@@ -5,9 +5,9 @@ import PrimeGen
 import Criterion.Main
 
 main :: IO ()
-main = mainTest
+main = someFunc
 
-
+{-}
 mainTest :: IO ()
 mainTest = defaultMain [
     bgroup "PrimeGen1" [ 
@@ -20,3 +20,4 @@ mainTest = defaultMain [
                 bench "300-50" $ nfIO (genPrimeIO3 50 (10^300) (10^310))
               , bench "300" $ nfIO (genPrimeIO3 60 (10^300) (10^310))]]
 
+-}
